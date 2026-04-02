@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Stuti Manka — fourth-year Electrical Engineering and Management student at McMaster University."
+    />
+    <title>Stuti Manka · Electrical Engineering &amp; Management</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="logo" href="#">SM</a>
+      <button
+        type="button"
+        class="nav-toggle"
+        aria-expanded="false"
+        aria-controls="site-nav"
+        aria-label="Open menu"
+      >
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#focus">Focus</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#skills">Skills &amp; Knowledge</a></li>
+          <li><a href="#contact" class="nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-inner">
+          <p class="eyebrow">Electrical engineering &amp; management</p>
+          <h1 id="hero-heading">Stuti Manka</h1>
+          <p class="hero-lead">
+            I’m a McMaster student interested in <strong>controls</strong>,
+            <strong>embedded systems</strong>, and <strong>robotics</strong> —
+            building reliable systems by connecting analysis, modeling, and
+            hands-on integration.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View work</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="section-inner">
+          <h2 class="section-title">About</h2>
+          <div class="prose two-col">
+            <p>
+              I am a fourth-year Electrical Engineering and Management student
+              at McMaster University, with strong interests in controls,
+              embedded systems, and robotics. I enjoy taking ideas from
+              simulation and technical analysis into hardware that works in
+              the real world.
+            </p>
+            <p>
+              Alongside my coursework, I’ve built hands-on experience through
+              SCADA and protection &amp; controls work, plus robotics and vehicle
+              integration projects. My goal is to keep growing the skills that
+              connect theory to reliable system behavior.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="focus" class="section section-alt">
+        <div class="section-inner">
+          <h2 class="section-title">Areas of focus</h2>
+          <ul class="card-grid">
+            <li class="card">
+              <h3>Power &amp; Electrical Systems</h3>
+              <p>
+                Power distribution, protection &amp; controls, and feeder analysis
+                (alarms, operational logs, and reliability improvements).
+              </p>
+            </li>
+            <li class="card">
+              <h3>Embedded &amp; Control Systems</h3>
+              <p>
+                Closed-loop motor drive control, microcontroller integration,
+                interrupts/ADC sampling, and practical tuning through testing.
+              </p>
+            </li>
+            <li class="card">
+              <h3>Signals &amp; Communications</h3>
+              <p>
+                LTI systems, frequency response, and MATLAB-based signal analysis
+                to connect math with measured behavior.
+              </p>
+            </li>
+            <li class="card">
+              <h3>Systems Modeling &amp; ML</h3>
+              <p>
+                Data-driven modeling, sensitivity/NPV-style analysis, and
+                coursework in supervised learning and evaluation.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-inner">
+          <h2 class="section-title">Projects</h2>
+          <p class="section-intro">
+            Featured work spanning autonomous systems, embedded control, and
+            power/energy analysis.
+          </p>
+          <ul class="project-list">
+            <li class="project-item">
+              <div class="project-meta">
+                <span class="project-tag">McMaster</span>
+                <span class="project-year">In progress</span>
+              </div>
+              <h3 class="project-title">
+                Electrical Systems Integration Project — Autonomous Vehicle Platform
+              </h3>
+              <p class="project-desc">
+                Implemented closed-loop motor drive control using MATLAB/Simulink,
+                built ROS-based LiDAR (360&amp;deg;) and IMU pipelines, and integrated
+                embedded controllers/motor drivers/power distribution subsystems.
+                Validated performance through simulation and on-platform testing.
+              </p>
+            </li>
+            <li class="project-item">
+              <div class="project-meta">
+                <span class="project-tag">Personal</span>
+                <span class="project-year">In progress</span>
+              </div>
+              <h3 class="project-title">Line-Following Mobile Robot</h3>
+              <p class="project-desc">
+                Designed an autonomous robot with 4+ IR sensors and dual DC motors,
+                implemented interrupt-driven ADC sampling and PWM motor control,
+                and tuned control parameters over iterative testing to reduce
+                oscillations and improve high-speed stability.
+              </p>
+            </li>
+            <li class="project-item">
+              <div class="project-meta">
+                <span class="project-tag">McMaster</span>
+                <span class="project-year">Completed</span>
+              </div>
+              <h3 class="project-title">Wind Turbine Farm Implementation Study</h3>
+              <p class="project-desc">
+                Modeled energy production in Python using wind distributions and
+                turbine power curves, performed sensitivity analysis and NPV
+                evaluation, and compared placement strategies to optimize capture
+                while minimizing wake losses.
+              </p>
+            </li>
+            <li class="project-item">
+              <div class="project-meta">
+                <span class="project-tag">McMaster</span>
+                <span class="project-year">2nd place</span>
+              </div>
+              <h3 class="project-title">Sumo Robot — McMaster Engineering Competition</h3>
+              <p class="project-desc">
+                Led a 4-person multidisciplinary team to 2nd place by refining
+                mechanical structure, integrating sensor systems, and developing
+                embedded control logic for autonomous maneuvering and opponent
+                detection.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="timeline" class="section section-alt">
+        <div class="section-inner">
+          <h2 class="section-title">Timeline</h2>
+          <p class="section-intro">
+            Education, job experience, and involvement — in one scrollable view.
+          </p>
+          <div
+            class="timeline-scroller"
+            role="region"
+            aria-label="Education, experience, and involvement timeline"
+            tabindex="0"
+          >
+            <ul class="timeline">
+              <li>
+                <span class="timeline-label">Apr 2024 - Apr 2025</span>
+                <div class="timeline-card">
+                  <h3>Electrical Engineering Intern — SCADA &amp; Protection &amp; Controls</h3>
+                  <p class="timeline-detail">
+                    Alectra Utilities (Brampton, ON). Analyzed feeder data and
+                    operational logs, maintained protection documentation (100+),
+                    supported testing/commissioning, and troubleshot SCADA telemetry &amp; data integrity.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="timeline-label">Jun 2024 - Aug 2025</span>
+                <div class="timeline-card">
+                  <h3>Assistant Teacher — UCMAS</h3>
+                  <p class="timeline-detail">
+                    Mississauga, ON. Instructed 15–25 students (ages 3–10) in structured
+                    problem solving and mental math, adapting lessons to different learning styles.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="timeline-label">Jan 2025 - Present</span>
+                <div class="timeline-card">
+                  <h3>Electrical Team Member — RoboSub (McMaster)</h3>
+                  <p class="timeline-detail">
+                    Designing and integrating electrical subsystems for an autonomous
+                    underwater vehicle (AUV): power distribution, control systems, and sensor integration architectures.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="timeline-label">Sep 2025 - Present</span>
+                <div class="timeline-card">
+                  <h3>Volleyball Team Captain (Intramurals)</h3>
+                  <p class="timeline-detail">
+                    Led a team of 10+ players with practice scheduling, strategy, and team communication,
+                    balancing athletics with academics.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="timeline-label">Expected 2027</span>
+                <div class="timeline-card">
+                  <h3>B.Eng. Electrical Engineering and Management — McMaster University</h3>
+                  <p class="timeline-detail">
+                    Fourth year. Minor in management with strong grounding in controls,
+                    embedded systems, signals &amp; communications, and power systems.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="section-inner">
+          <h2 class="section-title">Skills &amp; Knowledge</h2>
+          <p class="section-intro">
+            Key course topics that align with my interests in controls, embedded systems,
+            robotics, and electrical foundations.
+          </p>
+          <ul class="card-grid">
+            <li class="card">
+              <h3>Electronic Devices &amp; Circuits II</h3>
+              <p>Analog &amp; mixed-signal circuits, multistage amplifiers, feedback &amp; stability, frequency response, active filters, oscillators, ADC/DAC.</p>
+            </li>
+            <li class="card">
+              <h3>Signals &amp; Systems</h3>
+              <p>Continuous/discrete-time LTI systems, frequency response, MATLAB-based signal analysis.</p>
+            </li>
+            <li class="card">
+              <h3>Power Systems</h3>
+              <p>Single- and three-phase power systems, transformers, induction &amp; synchronous machines, electromechanical energy conversion.</p>
+            </li>
+            <li class="card">
+              <h3>Mechatronics</h3>
+              <p>Sensors &amp; actuators, state-space modeling, PLC ladder logic, PID and digital control, and system integration &amp; safety.</p>
+            </li>
+            <li class="card">
+              <h3>Embedded &amp; Microprocessor Systems</h3>
+              <p>ARM microcontrollers, peripheral interfacing, interrupts, ADC/DAC, timers, PWM, communication protocols, and real-time embedded programming (C/C++).</p>
+            </li>
+            <li class="card">
+              <h3>Machine Learning</h3>
+              <p>Supervised learning, regression and classification, clustering, model evaluation, and data-driven modeling &amp; optimization.</p>
+            </li>
+            <li class="card">
+              <h3>Engineering Economics</h3>
+              <p>Cost-benefit analysis, NPV, risk and sensitivity analysis, optimization under uncertainty, and project decision-making.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-contact">
+        <div class="section-inner contact-inner">
+          <h2 class="section-title">Contact</h2>
+          <p class="contact-lead">
+            For opportunities and collaborations, feel free to reach out.
+          </p>
+          <ul class="contact-links">
+            <li>
+              <a href="mailto:stutimanka03@gmail.com">stutimanka03@gmail.com</a>
+            </li>
+            <li>
+              <a href="tel:+16477207396">+1 (647) 720-7396</a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/stuti-manka/"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        <span class="footer-copy">&copy; <span id="year"></span> Stuti Manka</span>
+        <span class="footer-note">Built as a static site — edit freely.</span>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
